@@ -5,7 +5,8 @@
  * @tree: Pointer to the root node of the tree to traverse
  * @func: Pointer to a function to call for each node
  *
- * Description: Traverse the binary tree in post-order (left, right, root)
+ * Description: Traverses the left subtree, then the right subtree,
+ * then the node. If tree or func is NULL, the function does nothing.
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
